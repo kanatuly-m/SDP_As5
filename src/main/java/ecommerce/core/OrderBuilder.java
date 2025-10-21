@@ -6,7 +6,7 @@ public class OrderBuilder {
     private String id = UUID.randomUUID().toString();
     private Customer customer = new Customer("anon", "Guest", "guest@example.com");
     private final List<CartItem> items = new ArrayList<>();
-    private String delivery = "Pickup"; // Pickup | Standard | Express
+    private String delivery = "Pickup";
 
     public OrderBuilder setId(String id) {
         this.id = Objects.requireNonNull(id);
